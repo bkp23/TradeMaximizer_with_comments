@@ -1,0 +1,18 @@
+1) Look at unmatched receivers
+  a. Mark each want's sender to be evaluated
+  [b. if no one else wanted me want last time, enable self-match]
+2) Look at each sender to be evaluated
+  a. if unmatched, propose as matching candidate (with recv that wants it)
+  b. if matched, evaluate the matched receiver per bullet #1
+  [c. if there's no one to send to me, self-match]
+
+A matched receiver is only evaluated if an unmatched receiver wants the same thing.
+
+A sender is only evaluated if an unmatched receiver wants it.
+
+Anything that's not evaluated gets a high price for next round.
+So a high-priced sender:
+  a) Has no unmatched receivers wanting it
+  b) Becomes a candidate to match itself
+A high-prices receiver:
+  a) Wants something no one else does (no unmatched receiver does)
